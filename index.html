@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
+  <title>Designing the Ultimate Anti-Snoring Pillow</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
@@ -35,184 +35,810 @@
 
 <body>
   <div class="content">
-    <h1>Project Title</h1>
+    <h1 style="text-align: center;">EIM-407: Designing the Ultimate Anti-Snoring Pillow</h1>
+    <br />
+    <image-component tag="image" source="assets/NUS.png" subtitle=" " style="width:500px; height:auto; display: block; margin: 0 auto;"></image-component>
+    <br />
+    <p style="font-weight: bold; text-align: center;">
+      CDE4301
+    <p style="text-align: center;">
+      Academic Year 2024/2025, Semester 1
+    </p>
+    <br />
+    <p style="font-weight: bold; text-align: center;">
+      Submitted By:
+    <p style="text-align: center;">
+      Chong Tse-Ning
+    </p>
+    <br />
+    <p style="font-weight: bold; text-align: center;">
+      Project Supervisors:
+    <p style="text-align: center;">
+      Dr. Yen Shih-Cheng
+    </p>
+    <p style="text-align: center;">
+      Associate Professor Patrick Chia
+    </p>
+    <br />
 
-    <!-- This is the team member component use to display details about your team members -->
-    <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Black" department="Mechanical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/yellowranger.png" name="Yellow" department="Computer Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/redranger.png" name="Red" department="Electrical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/pinkranger.png" name="Pink" department="Biomedical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/blueranger.png" name="Blue" department="Chemical Engineering"
-        year="1993"></team-member>
-    </div>
-
-    <!-- This is a divide from the shoelace library for aesthetic purpose -->
     <sl-divider></sl-divider>
 
-    <!-- This is the table-of-content component use to define all of the link directly to each section -->
     <div class="table-of-content">
       <h2>Table of Contents</h2>
       <sl-tree>
         <sl-tree-item expanded>
-          <a href="#section-header-1">1. Section Header 1</a>
+          <a href="#section-1">1 Introduction to Obstructive Sleep Apnoea (OSA)</a>
           <sl-tree-item>
-            <a href="#sub-section-1-header-1">1.1. Sub-section Header 1</a>
+            <a href="#section-1-1">1.1 Overview of OSA</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-1-header-2">1.2. Sub-section Header 2</a>
+            <a href="#section-1-2">1.2 Risk Factors for OSA</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-1-3">1.3 Complications of OSA</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-1-4">1.4 OSA Diagnosis and Severity Levels</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-1-5">1.5 Prevalence of OSA</a>
           </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#section-header-2">2. Section Header 1</a>
+          <a href="#section-2">2 Literature Review on Common Treatment Modalities for OSA</a>
           <sl-tree-item>
-            <a href="#sub-section-2-header-1">2.1. Sub-section Header 1</a>
+            <a href="#section-2-1">2.1 Non-Positional Sleep Therapy</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
+            <a href="#section-2-1-1">2.1.1 Continuous Positive Airway Pressure (CPAP) Therapy</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-1-2">2.1.2 Oral Appliances</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-1-3">2.1.3 Surgery</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-2">2.2 Positional Sleep Therapy</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-2-1">2.2.1 Zzoma Positional Device</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-2-2">2.2.2 NightBalance Positional Device</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-2-3">2.2.3 Night Shift Sleep Positioner</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-2-4">2.2.4 Pregnancy Pillows</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-2-5">2.2.5 Other Pillows (Variety of Positional Support Options)</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-2-3">2.3 Evaluation of Existing Treatment Modalities</a>
           </sl-tree-item>
         </sl-tree-item>
 
-        <sl-tree-item>
+        <sl-tree-item expanded>
+          <a href="#section-3">3 Problem Clarification</a>
+          <sl-tree-item>
+            <a href="#section-3-1">3.1 Problem Definition</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-3-2">3.2 Preliminary Study by Sengkang Hospital</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-4">4 Value Proposition</a>
+          <sl-tree-item>
+            <a href="#section-4-1">4.1 Trade-Offs</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-4-2">4.2 Persona</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-4-3">4.3 Value Proposition Statement</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-5">5 Design Strategy</a>
+          <sl-tree-item>
+            <a href="#section-5-1">5.1 Key Considerations</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-5-2">5.2 Prioritising Factors for Initial Design</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-6">6 Detailed Design</a>
+          <sl-tree-item>
+            <a href="#section-6-1">6.1 Simplifying Assumptions & Design Focus</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-6-2">6.2 Inspiration from Existing Solutions</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-6-3">6.3 Accessibility & Affordability</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-6-4">6.4 Design Specifications</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-7">7 Prototyping & Testing</a>
+          <sl-tree-item>
+            <a href="#section-7-1">7.1 Initial Prototyping & Firmness Testing</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-7-2">7.2 Securing the Bolsters for Positional Stability</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-7-3">7.3 Data Collection: Sensor-Based Monitoring</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-7-4">7.4 User Feedback: Qualitative Comfort Assessment</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-7-5">7.5 Data Collected: Positional Comfort Evaluation</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-7-6">7.6 Data Collected: User Feedback Evaluation</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-7-7">7.7 Insights & Expected Results</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-8">8 Limitations & Future Plans</a>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
           <a href="#references">References</a>
         </sl-tree-item>
       </sl-tree>
     </div>
+
     <sl-divider></sl-divider>
 
     <div>
+      <div id="section-1">
+        <h2>1 Introduction to Obstructive Sleep Apnoea (OSA)</h2>
+      </div>
 
-      <!-- This is an example of what a section might look like -->
-      <div id="section-header-1">
-        <h2> 1. Section Header 1 </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Tincidunt ornare massa eget egestas. At tellus at urna condimentum mattis pellentesque id nibh tortor.
-          Elementum sagittis vitae et leo duis ut diam. Morbi tristique senectus et netus et malesuada fames.
-          Suspendisse
-          ultrices gravida dictum fusce ut placerat orci. Risus nullam eget felis eget nunc lobortis mattis aliquam
-          faucibus
-          (Brody, 2007). Eget sit amet tellus cras adipiscing enim eu turpis egestas. Aliquet nibh praesent tristique
-          magna
-          sit amet purus. Adipiscing bibendum est ultricies integer quis auctor elit sed. Fermentum et sollicitudin ac
-          orci
-          phasellus egestas tellus rutrum. At in tellus integer feugiat scelerisque varius morbi enim nunc. Volutpat
-          blandit
-          aliquam etiam erat velit scelerisque in. Id diam maecenas ultricies mi eget mauris pharetra et. Nec dui nunc
-          mattis
-          enim ut tellus elementum sagittis vitae.
+      <div id="section-1-1">
+        <h3>1.1 Overview of OSA</h3>
+        <p style="text-indent: 2em;">
+          Obstructive Sleep Apnoea (OSA) is a sleep disorder characterised by repeated episodes of complete (apnoea) or partial (hypopnoea) blockage of the upper airway, caused by airway muscle relaxation during sleep. As these muscles relax, the airway narrows or collapses, creating an obstruction (Figure 1) that restricts airflow and reduces oxygen levels in the blood. This disruption forces the diaphragm and chest muscles to work harder to reopen the airway, often leading to gasping or jerking movements as breathing resumes.
+        </p>
+        <image-component tag="image" source="assets/Figure1.png" subtitle="Figure 1: Upper Airway Obstruction Pattern" style="width:600px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Repeated obstruction during sleep results in intermittent choking episodes, with the body struggling for oxygen throughout the night. Such disruptions not only lead to abrasive snoring but also interfere with restorative sleep and oxygen flow to vital organs, causing significant stress on the body. Individuals with OSA may breathe through their mouths, as the backward collapse of the tongue further narrows the upper airway, reducing airflow even more.
+        </p>
+        <p style="text-indent: 2em;">
+          In addition to loud and frequent snoring, other common symptoms of OSA include abrupt awakenings during the night, choking or gasping episodes, and excessive daytime sleepiness. Many individuals with OSA wake up feeling unrefreshed, sometimes with additional symptoms like headaches, dry mouth, and difficulty concentrating during the day.
         </p>
       </div>
 
-      <div id="sub-section-1-header-1">
-        <h3>1.1 Sub-section Header 1</h3>
-        <p>
-          Ultrices dui sapien eget mi. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Dolor purus non enim
-          praesent elementum facilisis. Lacus vestibulum sed arcu non odio euismod lacinia at. Metus aliquam eleifend mi
-          in nulla. Lacus sed viverra tellus in hac habitasse platea. Varius quam quisque id diam vel quam elementum
-          pulvinar. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Diam ut venenatis tellus in metus
-          vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Venenatis lectus magna
-          fringilla
-          urna. In nisl nisi scelerisque eu ultrices. Velit egestas dui id ornare arcu odio ut sem nulla. Quam id leo in
-          vitae. Egestas congue quisque egestas diam in arcu cursus euismod quis. Porttitor leo a diam sollicitudin
-          tempor
-          id eu nisl.
+      <br />
+
+      <div id="section-1-2">
+        <h3>1.2 Risk Factors for OSA</h3>
+        <p style="text-indent: 2em;">
+          OSA risk is shaped by a complex interplay of anatomical and non-anatomical factors that narrows the airway and increases its collapsibility (Figure 2). Major risk factors include structural airway abnormalities, lifestyle choices, and demographic factors, all of which play a role in the onset and severity of OSA.
+        </p>
+        <image-component tag="image" source="assets/Table1.png" subtitle="Table 1: Risk Factors for OSA" style="display: block; margin: 0 auto;"></image-component>
+      </div>
+
+      <br />
+
+      <div id="section-1-3">
+        <h3>1.3 Complications of OSA</h3>
+        <p style="text-indent: 2em;">
+          Untreated OSA can lead to serious health complications, underscoring the importance of effective treatment. By causing repeated episodes of oxygen deprivation and fragmented sleep, OSA exerts significant stress on the cardiovascular system, increasing risks for high blood pressure, heart attacks, stroke, and other heart-related issues. Studies indicate that approximately 70 percent of people who have suffered a stroke and over 35 percent of those with high blood pressure also suffer from OSA, emphasising the strong association between OSA and cardiovascular disease.
+        </p>
+        <p style="text-indent: 2em;">
+          Additionally, OSA contributes to metabolic and mental health issues. Oxygen deprivation and poor-quality sleep can exacerbate insulin resistance and worsen diabetes, while chronic sleep disruption is linked to heightened risks of depression, anxiety, and memory impairment. Chronic fatigue due to disrupted sleep impairs daytime alertness, increasing the risk of motor vehicle accidents up to sevenfold and leading to higher rates of work-related accidents due to diminished focus and slower reaction times.
+        </p>
+        <p style="text-indent: 2em;">
+          Beyond these health risks, OSA significantly impacts quality of life, with affected individuals experiencing excessive daytime sleepiness, irritability, and reduced cognitive performance, interfering with work and social interactions. These wide-ranging complications illustrate the urgent need for accessible and effective treatment options to mitigate the far-reaching effects of OSA on health and daily functioning.
         </p>
       </div>
 
-      <div id="sub-section-1-header-2">
-        <h3>1.2 Sub-section Header 2</h3>
-        <p>
-          Fermentum dui faucibus in ornare quam viverra orci. Donec ultrices tincidunt arcu non sodales. A diam maecenas
-          sed enim ut sem viverra. Semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis. Auctor
-          augue mauris augue neque gravida in fermentum et. Auctor elit sed vulputate mi sit amet. Maecenas pharetra
-          convallis posuere morbi leo urna. Sem nulla pharetra diam sit amet nisl. Id nibh tortor id aliquet lectus.
-          Nibh
-          nisl condimentum id venenatis a condimentum vitae sapien. Convallis posuere morbi leo urna molestie at
-          elementum.
-        </p>
+      <br />
 
-        <!-- This is an example of how you might use the image component -->
-        <image-component tag="image" source="assets/requirement.png"
-          subtitle="Image 1: iDP suggested pathway"></image-component>
+      <div id="section-1-4">
+        <h3>1.4 OSA Diagnosis and Severity Levels</h3>
+        <p style="text-indent: 2em;">
+          The gold standard for diagnosing OSA is <b>polysomnography (PSG)</b>, an overnight in-laboratory sleep study. PSG is a non-invasive test that records multiple physiological parameters (e.g. brain wave activity, heart rate, oxygen levels), providing a comprehensive profile of the patient’s sleep quality. The study results allow healthcare providers to calculate the <b>Apnoea-Hypopnoea Index (AHI)</b>, which quantifies OSA severity based on the number of apnoeic and hypopneic episodes per hour of sleep (Table 2).
+        </p>
+        <image-component tag="image" source="assets/Table2.png" subtitle="Table 2: Severity Grading of OSA (based on AHI)" style="width:300px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          While PSG offers the most detailed data, <b>Home Sleep Test (HST)</b> provides a more accessible alternative. HSTs use portable devices (e.g. wearable monitors, disposable devices) to record essential sleep parameters from the comfort of the patient’s home. Although HST is less comprehensive than PSG, it is valuable for straightforward OSA cases, offering a cost-effective and convenient diagnostic option.
+        </p>
+        <p style="text-indent: 2em;">
+          Table 3 compares the two diagnostic methods (PSG and HRT), balancing factors like convenience, cost, accuracy, and indications for use.
+        </p>
+        <image-component tag="image" source="assets/Table3.png" subtitle="Table 3: Comparison of PSG and HRT for OSA Diagnosis" style="display: block; margin: 0 auto;"></image-component>
+      </div>
+
+      <br />
+
+      <div id="section-1-5">
+        <h3>1.5 Prevalence of OSA</h3>
+        <p style="text-indent: 2em;">
+          OSA is a prevalent and increasingly recognised global health concern with significant health implications. An estimated 1 billion people worldwide are affected, including approximately 425 million adults aged 30 to 69 who experience moderate to severe OSA.
+        </p>
+        <p style="text-indent: 2em;">
+          In Singapore, data from the Singapore Health Study estimates that 30.5 percent of the population may suffer from moderate to severe OSA, highlighting the public health impact of this condition. Despite the high prevalence, it is believed that up to 91 percent of OSA cases remain undiagnosed, leaving most affected individuals unaware of their condition and at risk for associated health complications.
+        </p>
+        <p style="text-indent: 2em;">
+          With obesity rates and the elderly population (key risk factors of OSA) both rising globally, the prevalence of OSA is expected to continue increasing, underscoring the need for improved awareness and accessible treatment options.
+        </p>
       </div>
     </div>
 
-
-    <br />
     <br />
     <sl-divider></sl-divider>
+
     <div>
-      <div id="section-header-2">
-        <h2>2. Section Header 2</h2>
-        <p>
-          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
-          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
-          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
-          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
-          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
-          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
-          aliquam sem.
+      <div id="section-2">
+        <h2>2 Literature Review on Common Treatment Modalities for OSA</h2>
+        <p style="text-indent: 2em;">
+          Management of OSA is a multidisciplinary effort, involving various treatment modalities that address airway obstruction through distinct approaches. Specialists from various fields collaborate to ensure tailored, effective management for OSA patients. Each modality offers unique benefits and limitations, catering to the diverse needs and preferences of patients. This section reviews some of the most commonly used treatment options, highlighting methods by which they aim to maintain an open airway and improve patient outcomes.
         </p>
       </div>
 
-      <div id="sub-section-2-header-1">
-        <h3>2.1. Sub-section Header 1</h3>
-        <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
-        </p>
+      <br />
 
-        <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
+      <div id="section-2-1">
+        <h3>2.1 Non-Positional Sleep Therapy</h3>
+        <p style="text-indent: 2em;">
+          Non-positional sleep therapies are designed to address OSA by focusing on managing airway obstruction through external or internal means that do not rely on the patient’s sleeping position. These treatments aim to prevent airflow collapse or keep the airway open during sleep, either by improving airflow, modifying muscle tone, or physically altering airway structure. Each treatment offers unique advantages, with varying degrees of effectiveness depending on OSA severity and the patient’s needs.
+        </p>
       </div>
 
-      <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
-        <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
-        </p>
+      <br />
 
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
+      <div id="section-2-1-1">
+        <h4>2.1.1 Continuous Positive Airway Pressure (CPAP) Therapy</h4>
+        <p style="text-indent: 2em;">
+          CPAP is the gold standard and most effective non-surgical treatment for OSA. It works by delivering a continuous stream of pressurised air through a mask, keeping the airway open and preventing blockages (Figures 2 and 3).
+        </p>
+        <image-component tag="image" source="assets/Figure2.jpeg" subtitle="Figure 2: Types of CPAP Masks" style="width:500px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <br />
+        <image-component tag="image" source="assets/Figure3.jpg" subtitle="Figure 3: CPAP Setup" style="width:300px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          A typical CPAP setup consists several key components:
+        </p>
+        <image-component tag="image" source="assets/CPAP.png" subtitle=" " style="width:500px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Some CPAP machines include advanced features like heated humidifiers to reduce dryness and adjustable pressure settings to increase comfort.
+        </p>
+        <p style="text-indent: 2em;">
+          Long-term use of CPAP has been associated with reduced apnoeas and snoring, as well as lower risks of heart disease, stroke, and high blood pressure. It also improves cognitive function, memory, and quality of sleep. Patients who use CPAP often report feeling more rested, energetic, and alert during the day. Some experience noticeable improvements after the first use, while for others, the benefits become apparent after consistent use over a few weeks.
+        </p>
+        <p style="text-indent: 2em;">
+          Despite its effectiveness, patient adherence remains a challenge due to its discomfort and side effects. Common issues include airway dryness, mask air leaks, and difficulties adjusting to the mask, particularly during initial use. A study from Singapore General Hospital found that only 52.6 percent of OSA patients continued using their CPAP device consistently after one year, highlighting the importance of comfort and adaptation to treatment.
+        </p>
+        <p style="text-indent: 2em;">
+          Additionally, regular maintenance is required, including mask cleaning, headgear washing, and tube replacement. Minor adjustments and troubleshooting may also be needed to optimise comfort and effectiveness.
+        </p>
+        <p style="text-indent: 2em;">
+          Despite these challenges, CPAP therapy offers substantial long-term benefits, making it a vital treatment for managing OSA.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-1-2">
+        <h4>2.1.2 Oral Appliances (OAs)</h4>
+        <p style="text-indent: 2em;">
+          OAs are an alternative treatment for patients who struggle with CPAP therapy. These devices, resembling removable braces or mouth guards, work by positioning the lower jaw slightly forward to keep the airway open (Figure 4).
+        </p>
+        <image-component tag="image" source="assets/Figure4.png" subtitle="Figure 4: SomnoDent Oral Appliance" style="width:175px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          OAs are generally easier to use and have higher adherence rates, estimated at 80 to 90 percent (compared to CPAP’s 50 to 70 percent). This makes them an effective option for patients with less severe OSA. However, some side effects include drooling, sore jaw muscles, and the need for regular maintenance. The effectiveness of OAs may also decrease with weight gain or worsening OSA severity, with replacement needed every 3 to 5 years.
+        </p>
+        <p style="text-indent: 2em;">
+          Additionally, proper oral hygiene is essential during OA use. Poor oral hygiene can lead to tooth cavities, gum issues, or tooth loosening, making the appliance ineffective. It is critical to ensure that dental work (e.g. fillings, crowns) are completed before using an OA, as teeth serve an anchor for the device. If oral health is not maintained, the effectiveness of OAs in managing OSA is compromised.
+        </p>
+        <p style="text-indent: 2em;">
+          A key consideration when using OAs is that proper diagnosis is needed to ensure its suitability for the patient’s specific condition, especially in cases of mouth breathing. Additionally, a 4 to 6 month titration period may be required to adjust the appliance to optimal position.
+        </p>
+        <p style="text-indent: 2em;">
+          Despite these considerations, OAs offer a comfortable and effective treatment for many OSA patients who cannot tolerate CPAP therapy.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-1-3">
+        <h4>2.1.3 Surgery</h4>
+        <p style="text-indent: 2em;">
+          Surgery is a last resort for severe OSA when other treatments, including behavioural and lifestyle modifications, have proven ineffective. It may also be recommended for patients with easily correctable abnormalities of the upper airway. The primary goal of surgery is to widen the upper airway by reducing excess tissue and minimising collapsibility, thereby enhancing airflow. Various surgical procedures are available, including tonsillectomy, septoplasty, and tracheostomy.
+        </p>
+        <p style="text-indent: 2em;">
+          A standardised surgical approach is rarely effective because each patient’s airway anatomy and underlying cause of OSA differ. Hence, surgical treatment must be carefully tailored to each individual. A thorough pre-surgical evaluation is often conducted, including Drug-Induced Sleep Endoscopy and imaging studies, to accurately pinpoint sites of airway obstruction. This targeted approach ensures the surgery addresses specific areas causing the obstruction while minimising unnecessary interventions. In some cases, a combination of surgeries may be required to address blockages at multiple sites.
+        </p>
+        <p style="text-indent: 2em;">
+          While surgery is effective, it carries significant risks and potential complications. It is costly, invasive, and involves a prolonged recovery period. Residual symptoms (e.g. snoring) or a relapse of OSA symptoms can occur post-surgery. To maintain the benefits of surgery, patients may also require complementary treatments, including weight management, dental appliances, or continued CPAP therapy.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-2">
+        <h3>2.2 Positional Sleep Therapy</h3>
+        <p style="text-indent: 2em;">
+          Positional sleep therapy aims to manage OSA by addressing the effects of sleeping position on airway obstruction. For many individuals with positional OSA, sleeping on the back (supine position) exacerbates airway collapse, leading to more frequent apnoeic events. By encouraging side-sleeping, these therapies reduce airway collapse and improve airflow during sleep. As a less invasive approach, positional therapy may be particularly effective for patients whose OSA severity is strongly influenced by body position.
+        </p>
+        <p style="text-indent: 2em;">
+          The following subsections explore several commonly used positional sleep therapy solutions. While these solutions offer a promising alternative to traditional OSA treatments, their effectiveness often varies between individuals. Positional therapy tends to be less effective in severe OSA cases, and many products lack customisation options to suit individual needs. Moreover, discomfort is a common issue, as some devices disturb the very sleep they are designed to improve. Additionally, larger pillows may retain heat and add to discomfort. These limitations underscore the need for better-designed solutions that balance comfort, usability, and efficacy.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-2-1">
+        <h4>2.2.1 Zzoma Positional Device</h4>
+        <image-component tag="image" source="assets/Figure5.jpg" subtitle="Figure 5: Zzoma Device" style="width:250px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          The Zzoma positional device (Figure 5), designed by a board-certified sleep physician, is a Class II medical device prescribed for treating mild to moderate positional OSA and snoring.
+        </p>
+        <p style="text-indent: 2em;">
+          Zzoma features an effective wedge-shaped design with a special grip surface that helps maintain a side-sleeping position throughout the night. Adjustable velcro straps and stretchable material ensure comfort and ease of breathing during use. The device is also lightweight and portable, making it a convenient option for travel.
+        </p>
+        <p style="text-indent: 2em;">
+          At an affordable price point, Zzoma offers a more accessible and comfortable treatment solution for individuals with positional OSA, particularly for those seeking an alternative to more invasive therapies.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-2-2">
+        <h4>2.2.2 NightBalance Positional Device</h4>
+        <image-component tag="image" source="assets/Figure6.jpeg" subtitle="Figure 6: NightBalance Device" style="width:300px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          The Philips NightBalance (Figure 6) is a compact, mask-free solution for managing positional OSA. Worn across the chest with an adjustable, machine-washable strap, this palm-sized device delivers gentle vibrations to encourage side-sleeping without disturbing the user’s sleep.
+        </p>
+        <p style="text-indent: 2em;">
+          Using advanced detection technology, NightBalance monitors the user’s sleeping position and activates gentle vibrations when the user lies on their back. These vibrations prompt a natural shift to a side-sleeping position, reducing apnoeic events associated with back-sleeping. The device intelligently adjusts the vibration intensity for a personalised therapy experience.
+        </p>
+        <p style="text-indent: 2em;">
+          NightBalance also tracks the user’s response to therapy, continuously recording sleep data that is automatically uploaded to a secure online portal. Through a user-friendly mobile app, users can review detailed therapy insights, monitor their progress, and set personalised sleep goals, ensuring consistent and effective management of their condition.
+        </p>
+        <p style="text-indent: 2em;">
+          Studies show that NightBalance offers greater comfort, ease of use, and adherence compared to CPAP therapy. Clinically proven to reduce AHI to levels comparable to CPAP therapy, it eliminates the need for masks, tubes, or bulky accessories. Its lightweight, portable, and unobtrusive design makes it particularly attractive for patients who struggle with traditional, more invasive therapies.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-2-3">
+        <h4>2.2.3 Night Shift Sleep Positioner</h4>
+        <image-component tag="image" source="assets/Figure7.png" subtitle="Figure 7: Night Shift Device" style="width:300px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          The Night Shift Sleep Positioner (Figure 7) is a clinically proven device for managing positional OSA and snoring. It can be worn on the back of the neck or chest, offering a comfortable and effective solution to encourage side-sleeping.
+        </p>
+        <p style="text-indent: 2em;">
+          The device works by activating a gentle vibration when the user begins to sleep on their back. If the user does not change position, the vibration intensity gradually increases until they adjust to a side-sleeping posture, typically without waking them. To ensure comfort, the device allows a customisable delay of 15 or 30 minutes before activating, giving users sufficient time to fall asleep in any position.
+        </p>
+        <p style="text-indent: 2em;">
+          Night Shift also tracks and reports detailed sleep data. Users and physicians can monitor metrics such as sleep quality, snoring frequency, sleep efficiency, and number of interruptions during the night. The device’s secure report portal offers compliance summaries, enabling long-term tracking of adherence and therapeutic outcomes.
+        </p>
+        <p style="text-indent: 2em;">
+          Night Shift’s dual functionality as a positional therapy device and comprehensive sleep monitoring tool makes it a valuable option for patients seeking non-invasive alternatives to traditional OSA treatments. Its neck-worn design is particularly beneficial for users who prioritise portability and minimal disruption during sleep.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-2-4">
+        <h4>2.2.4 Pregnancy Pillows</h4>
+        <image-component tag="image" source="assets/Figure8.png" subtitle="Figure 8: Pregnancy Pillow Variety" style="width:550px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Pregnancy pillows are designed to promote comfortable side-lying positions. By promoting a neutral spine alignment and reducing pressure points, pregnancy pillows help maintain a stable side-lying position throughout the night, reducing the likelihood of shifting to a back-lying position that can exacerbate OSA symptoms.
+        </p>
+        <p>
+          There are several popular types of pregnancy pillows:
+        </p>
+        <ul>
+          <li><b>U-shaped pillows</b> offer full-body support, cradling both the front and back to prevent rolling onto the back</li>
+          <li><b>C-shaped pillows</b> provide targeted support along the body, relieving back and hip discomfort and reducing the chances of shifting to a back-sleeping position</li>
+          <li><b>Wedge pillows</b> support specific areas (e.g. back, belly) which can be strategically positioned to encourage side-sleeping</li>
+          <li><b>I-shaped pillows</b> are used for single-side support, offering a minimalistic alternative</li>
+        </ul>
+        <p style="text-indent: 2em;">
+          Pregnancy pillows offer a non-invasive, comfortable alternative for positional OSA management, especially for individuals who struggle with wearable positional devices. They also help support the spine and joints, addressing common alignment issues that can disrupt sleep and exacerbate OSA symptoms.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-2-5">
+        <h4>2.2.5 Other Pillows</h4>
+        <p style="text-indent: 2em;">
+          In addition to pregnancy pillows, numerous other pillows are marketed as anti-snoring solutions or positional aids for OSA (Figure 9). These pillows vary widely in design, shape, size, and filling materials. Some incorporate features like memory foam, cooling gels, or ergonomic contours to improve comfort and promote side-sleeping. Others employ unique technologies, such as adjustable air chambers or sensors to encourage positional changes during sleep.
+        </p>
+        <image-component tag="image" source="assets/Figure9.png" subtitle="Figure 9: Examples of Anti-Snoring Pillows" style="display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Despite their widespread availability and promotion, many of these products lack robust, evidence-based data supporting their efficacy in managing OSA symptoms. While some users report subjective improvements in comfort or snoring reduction, the effectiveness of these pillows in significantly lowering AHI levels (or maintaining side-sleeping) remains largely unverified.          
+        </p>
+        <p style="text-indent: 2em;">
+          These pillows may offer supplemental benefits (e.g. improve spinal alignment, reduce discomfort), but they are generally not a standalone solution for OSA.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-2-3">
+        <h3>2.3 Evaluation of Existing Treatment Modalities</h3>
+        <p style="text-indent: 2em;">
+          We evaluated common treatment options for OSA across several key factors to better understand their advantages and limitations (Table 4).
+        </p>
+        <image-component tag="image" source="assets/Table4.png" subtitle="Table 4: Comparison of Common Treatment Modalities" style="width:650px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Our analysis reveals that the effectiveness of each treatment is closely tied to OSA severity. However, several treatments present concerns, such as high costs and invasiveness, as some therapies require significant lifestyle changes or medical procedures. Furthermore, a lack of customisability in many treatments contributes to discomfort, which ultimately leads to low adherence rates over time. This discomfort can hinder long-term effectiveness of the therapy, as patients may struggle to maintain consistent use. The variability in patient experience highlights the need for more personalised and adaptable treatment options to improve both compliance and overall outcomes.
+        </p>
       </div>
     </div>
 
-    <!-- This is an example of how you can use the references component to create references -->
+    <br />
+    <sl-divider></sl-divider>
+
+    <div>
+      <div id="section-3">
+        <h2>3 Problem Clarification</h2>
+      </div>
+
+      <div id="section-3-1">
+        <h3>3.1 Problem Definition</h3>
+        <p style="text-indent: 2em;">
+          To better understand challenges faced by patients using current OSA treatments, a Problem Tree Analysis (Figure 10) was conducted to identify root causes of poor treatment adherence and outcomes.
+        </p>
+        <image-component tag="image" source="assets/Figure10.png" subtitle="Figure 10: Problem Tree Analysis" style="width:700px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          The analysis highlighted several limitations in existing treatment modalities which ultimately reduce effectiveness of OSA management:
+        </p>
+        <image-component tag="image" source="assets/Problem.png" subtitle=" " style="display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Addressing these root causes is critical to improving adherence and overall patient outcomes. Our project aims to tackle these gaps by developing a solution that prioritises comfort, accessibility, and customisation. Specifically, we aim to enhance positional therapy by leveraging insights from existing products and introducing user-centred design innovations. This approach has the potential to provide more effective and user-friendly treatment for OSA patients, ultimately promoting long-term adherence and health outcomes.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-3-2">
+        <h3>3.2 Preliminary Study by Sengkang Hospital</h3>
+        <p style="text-indent: 2em;">
+          In collaboration with Sengkang Hospital, we have grounded our project in real-world clinical findings. The hospital’s sleep team has conducted a preliminary study involving OSA patients, during which participants underwent overnight PSG using a pregnancy pillow to encourage side-sleeping. Sleep technicians observed sleep patterns, measuring key factors such as breathing patterns and blood oxygen levels.
+        </p>
+        <p style="text-indent: 2em;">
+          The results were promising: <b>70 to 80 percent of patients maintained a side-sleeping position throughout the night</b>, significantly reducing snoring and improving overall sleep quality. These findings validate the potential of positional therapy as non-invasive, accessible treatment for OSA.
+        </p>
+        <p>
+          Despite these positive outcomes, existing pregnancy pillows and other positional therapy devices present notable limitations, including discomfort, heat retention, and bulky designs, which diminish their effectiveness and appeal.
+        </p>
+      </div>
+
+    <br />
+    <sl-divider></sl-divider>
+
+    <div>
+      <div id="section-4">
+        <h2>4 Value Proposition</h2>
+      </div>
+
+      <div id="section-4-1">
+        <h3>4.1 Trade-Offs</h3>
+        <p style="text-indent: 2em;">
+          When considering treatment options for OSA, there were significant trade-offs between different modalities. While CPAP therapy is proven to be highly effective for many patients, its widespread use is often hindered by low patient adherence. This is largely due to discomfort associated with wearing the mask, which can be bulky, noisy, and restrictive, making it challenging for patients to use consistently despite its effectiveness.
+        </p>
+        <p style="text-indent: 2em;">
+          On the other hand, positional therapy, while not universally effective, offers a non-invasive solution with higher comfort levels, particularly for patients whose OSA is primarily exacerbated by back-sleeping. While positional therapy might not work for everyone, it presents an opportunity to create treatment that is comfortable and easier to use, ultimately leading to better adherence for specific groups of patients.
+        </p>
+        <p style="text-indent: 2em;">
+          In this project, we are focusing on this group of patients who benefit from positional therapy but require more user-friendly, comfortable, and customisable solutions. While this focus narrows our addressable market, we believe it allows us to address a critical gap in the current treatment landscape, offering substantial value in improving OSA management for those who struggle with conventional treatments.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-4-2">
+        <h3>4.2 Persona</h3>
+        <p style="text-indent: 2em;">
+          To better understand the needs of this target group, a persona was developed to guide the design of our solution.
+        </p>
+        <p style="text-align: center; font-style: italic;">
+          “Meet Sarah, a 45-year-old woman diagnosed with mild to moderate OSA. Sarah’s OSA is most severe when she sleeps on her back, causing frequent snoring and disrupted sleep. She has tried CPAP therapy but struggled with the discomfort of wearing the mask, especially due to skin irritation and pressure on her face. Sarah wants a solution that is non-invasive, comfortable, and easy to use, but she finds most positional therapy pillows bulky, uncomfortable, or ineffective.”
+        </p>
+        <p>
+          Sarah represents the type of patient who would benefit from a solution that addresses her needs of comfort, simplicity, and consistent use throughout the night. Her struggle with CPAP and limitations of existing positional therapy pillows highlight the need for a solution tailored to her requirements – a product that promotes side-sleeping without compromising effectiveness, comfort, or affordability.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-4-3">
+        <h3>4.3 Value Proposition Statement</h3>
+        <p style="text-indent: 2em;">
+          Our positional therapy solution provides targeted value for OSA patients (like Sarah) by addressing key gaps in existing treatment modalities:
+        </p>
+        <image-component tag="image" source="assets/ValueProp.png" subtitle=" "></image-component>
+        <p style="text-indent: 2em;">
+          Our solution aims to reduce OSA symptoms, enabling better sleep and overall improvements in health and well-being. By addressing discomfort, lack of customisation, and limited accessibility in existing treatments, we prioritise long-term adherence and patient satisfaction.
+        </p>
+        <p style="text-indent: 2em;">
+          Through enhancing positional sleep therapy options, we provide a balanced solution that is effective, comfortable, and accessible. This encourages consistent use, leading to better outcomes and a meaningful impact on patients’ quality of life.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <sl-divider></sl-divider>
+
+    <div>
+      <div id="section-5">
+        <h2>5 Design Strategy</h2>
+        <p style="text-indent: 2em;">
+          Our design strategy centres around creating a positional sleep therapy solution that addresses effectiveness and comfort for patients with OSA. We aim to develop a solution that helps patients maintain side-sleeping position, a key factor in reducing OSA symptoms. Recognising limitations of current solutions, our solution also seeks to be non-invasive and user-friendly, prioritising patient adherence and treatment effectiveness.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-5-1">
+        <h3>5.1 Key Considerations</h3>
+        <p style="text-indent: 2em;">
+          Our design is based on two primary dimensions of sleep comfort that affect the likelihood of maintaining a side-sleeping position throughout the night (Table 5). By targeting these aspects, our design seeks to balance effectiveness with comfort, accessibility, and customisability.
+        </p>
+        <image-component tag="image" source="assets/Table5.png" subtitle="Table 5: Dimensions of Sleep Comfort"></image-component>
+      </div>
+
+      <br />
+
+      <div id="section-5-2">
+        <h3>5.2 Prioritising Factors for Initial Design</h3>
+        <p style="text-indent: 2em;">
+          Given the wide range of factors influencing positional and thermal comfort, we have made simplifying assumptions to manage project complexity and timeline.
+        </p>
+        <p style="text-indent: 2em;">
+          We have decided to address factors one at a time through systematic prioritisation, with firmness as our focus for initial prototyping. Firmness directly impacts positional comfort and plays a central role in ensuring that patients remain in a side-sleeping position throughout the night. During the first round of design and prototyping, we will evaluate different firmness levels of the back bolster to identify the optimal level of support needed.
+        </p>
+        <p style="text-indent: 2em;">
+          Once we establish the optimal firmness for the back bolster, we will shift focus to other factors, such as material selection, which will be tested for their thermal comfort properties. By focusing on firmness first, we aim to create a strong foundation for the positional comfort aspect of the design before moving on to other design parameters.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <sl-divider></sl-divider>
+
+    <div>
+      <div id="section-6">
+        <h2>6 Detailed Design</h2>
+        <p style="text-indent: 2em;">
+          Taking into consideration all design factors we have to test eventually, we decided to explore each factor systematically by isolating and evaluating them one at a time. This approach will allow us to observe the effect of each variable on both positional and thermal comfort, ensuring we are optimising each aspect individually before moving on to further iterations.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-6-1">
+        <h3>6.1 Simplifying Assumptions & Design Focus</h3>
+        <p style="text-indent: 2em;">
+          Due to the large number of variables involved, we are faced with a wide range of combinations for testing. Using firmness and material as an example, we have to test for 25 different combinations to obtain the optimal positional and thermal comfort for a user (Table 6). Each of these combinations will require extensive data collection over a few days, making the overall process very tedious.
+        </p>
+        <image-component tag="image" source="assets/Table6.png" subtitle="Table 6: Testing Combinations for Two Factors"></image-component>
+        <p style="text-indent: 2em;">
+          To focus our efforts and streamline the development process, we made some simplifying assumption:
+        </p>
+        <ul>
+        <li>
+          Each factor (in Table 5) is solely tied to either positional comfort or thermal comfort, but not both.
+        </li>
+        <li>
+          Different materials at the same firmness level yield similar positional comfort results. This allows us to first standardise the material and focus on exploring various firmness levels. Once the optimal firmness is identified, we can then explore different materials to optimise thermal comfort and refine the overall design.
+        </li>
+        </ul>
+        <p style="text-indent: 2em;">
+          That said, in all our iterations, we will gather findings for both positional and thermal comfort to inform future improvements.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-6-2">
+        <h3>6.2 Inspiration from Existing Solutions</h3>
+        <p style="text-indent: 2em;">
+          Our design draws inspiration from the pregnancy pillow previously tested by Sengkang Hospital (Figure 11). Since this pillow has shown to be effective in encouraging side-sleeping, it served as a model for our solution. We incorporated similar principles but enhanced the design to improve comfort, adjustability, and thermal regulation.
+        </p>
+        <image-component tag="image" source="assets/Figure11.jpg" subtitle="Figure 11: Pregnancy Pillow" style="width:200px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Our solution includes a fixed shape and material for pillow components, with a standard pillow for head support, paired with front and back bolsters to provide additional support (Figure 12). This configuration makes use of familiar elements, which is likely to improve comfort and ease of use for patients.
+        </p>
+        <image-component tag="image" source="assets/Figure12.png" subtitle="Figure 12: Testing Setup" style="width:250px; height:auto; display: block; margin: 0 auto;"></image-component>
+      </div>
+
+      <br />
+
+      <div id="section-6-3">
+        <h3>6.3 Accessibility & Affordability</h3>
+        <p style="text-indent: 2em;">
+          Our design is cost-effective, ensuring the solution is affordable and accessible to a wide range of patients. Users will only need to purchase the bolsters if they do not already have them, which reduces the overall financial burden. By keeping costs low, we aim to increase patient compliance (for our research) and ensure that a broader range of patients can benefit from this solution.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-6-4">
+        <h3>6.4 Design Specifications</h3>
+        <image-component tag="image" source="assets/DesignSpecs.png" subtitle=" " style="display: block; margin: 0 auto;"></image-component>
+      </div>
+    </div>
+
+    <br />
+    <sl-divider></sl-divider>
+
+    <div>
+      <div id="section-7">
+        <h2>7 Prototyping & Testing</h2>
+      </div>
+
+      <div id="section-7-1">
+        <h3>7.1 Initial Prototyping & Firmness Testing</h3>
+        <p style="text-indent: 2em;">
+          To begin our initial prototyping and testing, we needed a basic bolster to serve as our starting point. Once the bolsters arrived, we conducted a firmness test on each one (Figure 13). Our goal was to create a quantifiable scale across five distinct firmness levels, which we would then use to evaluate user comfort and the effectiveness of positional support.
+        </p>
+        <image-component tag="image" source="assets/Figure13.png" subtitle="Figure 13: Firmness Test Procedure" style="width:300px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Currently, we are in the process of testing these firmness levels across three different test subjects, with the aim of understanding how firmness alone affects both effectiveness and comfort.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-7-2">
+        <h3>7.2 Securing the Bolsters for Positional Stability</h3>
+        <p style="text-indent: 2em;">
+          Ensuring consistent positional support was critical as the bolsters needed to stay in place during sleep without rolling away. Hence, we designed a system to secure the front and back bolsters together. Our solution used a velcro and cloth loop mechanism (Figure 14), allowing the bolsters to ‘hug’ the body comfortably and prevent unwanted movement during sleep, keeping the user in a side-sleeping position.
+        </p>
+        <image-component tag="image" source="assets/Figure14.png" subtitle="Figure 14: Bolster Setup" style="width:700px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          This approach was inspired by the design of pregnancy pillows which features a connecting structure that stabilises support points and was chosen for its simplicity and user-friendliness. The loops for each bolster are connected by a strip of cloth, keeping them securely in place while being easy to attach and remove as needed.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-7-3">
+        <h3>7.3 Data Collection: Sensor-Based Monitoring</h3>
+        <p style="text-indent: 2em;">
+          To accurately monitor and record the sleep posture of our test subjects, we used the MetaMotionRL (Figure 15), a wearable device that offers real-time, continuous monitoring of motion data. This device captures the frequency and range of motion, allowing us to determine if our design effectively encourages side-sleeping.
+        </p>
+        <image-component tag="image" source="assets/Figure15.png" subtitle="Figure 15: MetaMotionRL Sensor" style="width:200px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          The sensor was worn on the subject’s chest area (and taped down using any tape) to provide a stable reference point for detecting body position shifts (Figure 16). For optimal alignment, the charging port faced downward, ensuring consistent orientation and accurate data collection.
+        </p>
+        <image-component tag="image" source="assets/Figure16.png" subtitle="Figure 16: Sensor worn on Test Subject" style="width:250px; height:auto; display: block; margin: 0 auto;"></image-component>
+      </div>
+
+      <br />
+
+      <div id="section-7-4">
+        <h3>7.4 User Feedback: Qualitative Comfort Assessment</h3>
+        <p style="text-indent: 2em;">
+          In addition to quantitative data from the sensor, we recognised the importance of capturing subjective experience of comfort, as it can vary from user to user. We thus created a survey to gather user feedback on their comfort levels after each sleep session with the bolsters. Participants rated their positional comfort and thermal comfort on a scale from 1 to 5, where 1 represented the least comfort and 5 represented the most comfort. This allowed us to capture how users perceived their experience with different firmness levels and how perceived temperature affected their comfort.
+        </p>
+      </div>
+
+      <br />
+
+      <div id="section-7-5">
+        <h3>7.5 Data Collected: Positional Comfort</h3>
+        <p style="text-indent: 2em;">
+          Several data were captured by the MetaMotionRL sensor (Figure 17), but the primary metric for assessing positional comfort was pitch angle, which measures the side-to-side tilt of the body. By focusing on this metric, we tracked whether users remained on their sides or shifted to their backs while sleeping. This was critical in determining the effectiveness of the bolster in maintaining the desired side-sleeping position.
+        </p>
+        <image-component tag="image" source="assets/Figure17.png" subtitle="Figure 17: Data captured by MetaMotionRL Sensor" style="width:600px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Data collected by the sensor was analysed using the following plots:
+        </p>
+        <image-component tag="image" source="assets/Plots.png" subtitle=" " style="display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          Data collected so far has been summarised in Figure 18, which shows percentage side lying across the baseline (no back bolster) and each of the five firmness levels (Firmness 1 to Firmness 5) tested. This plot provides an overview of how the bolsters are performing in terms of encouraging side-sleeping.
+        </p>
+        <image-component tag="image" source="assets/Figure18.png" subtitle="Figure 18: Percentage Side Lying Across Various Conditions" style="width:600px; height:auto; display: block; margin: 0 auto;"></image-component>
+      </div>
+
+      <br />
+
+      <div id="section-7-6">
+        <h3>7.6 Data Collected: User Feedback</h3>
+        <p style="text-indent: 2em;">
+          Qualitative data from the surveys were consolidated into a frequency table (Table 7) to identify trends across different firmness levels.
+        </p>
+        <image-component tag="image" source="assets/Table7.png" subtitle="Figure 7: Survey Frequency Table" style="display: block; margin: 0 auto;"></image-component>
+      </div>
+
+      <br />
+      
+      <div id="section-7-7">
+        <h3>7.7 Insights & Expected Results</h3>
+        <p style="text-indent: 2em;">
+          Currently, we are in the process of testing the five firmness levels across three test subjects, with data collection ongoing. In the final box plot, we expect that baseline (without any back bolster) will form the control group, showing natural side-sleeping support. The most firm back support (Firmness 1) is expected to have the highest percentage side lying (close to 100 percent), indicating effective side-sleeping support. As firmness decreases from Firmness 1 to 5 (where there is minimal support), we expect percentage side lying to decrease, eventually returning to baseline levels (Figure 19).
+        </p>
+        <image-component tag="image" source="assets/Figure19.png" subtitle="Figure 19: Expected Trend" style="width:600px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <p style="text-indent: 2em;">
+          These insights will guide our next steps in optimising bolster firmness and materials, allowing us to refine the design for improved comfort and support.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <sl-divider></sl-divider>
+
+    <div>
+      <div id="section-8">
+        <h2>8 Limitations & Future Plans</h2>
+        <p style="text-indent: 2em;">
+          While the current prototyping phase has provided valuable insights into the impact of firmness on side-sleeping comfort, several limitations must be considered. First, the data collection process is still ongoing, with only preliminary results available from the five firmness levels tested across three test subjects. The sample size is limited, and further testing across a broader demographic is necessary to ensure the generalisability of the findings.
+        </p>
+        <p style="text-indent: 2em;">
+          Additionally, we have yet to explore how other factors (e.g. shape, material) affect side-sleeping comfort. While firmness plays a central role, the interaction between positional and thermal comfort is likely to be more complex. These factors will be addressed in future iterations of the design, aiming to create a more holistic and comfortable solution for users.
+        </p>
+      </div>
+
+    <br />
+    <sl-divider></sl-divider>
+
     <div id="references" class="references">
-      <sl-divider></sl-divider>
       <h2>References</h2>
       <ul>
         <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
+          Cleveland Clinic, “CPAP Machine: What It Is, How It Works, Pros & Cons,” Cleveland Clinic, Nov. 09, 2021. <a href="https://my.clevelandclinic.org/health/treatments/22043-cpap-machine" target="_blank">https://my.clevelandclinic.org/health/treatments/22043-cpap-machine</a>
         </li>
         <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
+          E. and Elm, “How to Find the Best Pregnancy Pillow for Your Changing Body,” How to Pick the Best Pregnancy Pillow?, Sep. 04, 2024. <a href="https://eliandelm.com/how-to-find-the-best-pregnancy-pillow/" target="_blank">https://eliandelm.com/how-to-find-the-best-pregnancy-pillow/</a></li>
+        <li>
+          J. M. Slowik and J. F. Collen, “Obstructive Sleep Apnea,” PubMed, Mar. 21, 2024. <a href="https://www.ncbi.nlm.nih.gov/books/NBK459252/" target="_blank">https://www.ncbi.nlm.nih.gov/books/NBK459252/</a>
         </li>
         <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
+          MSH, “Buy Philips NightBalance Positional Sleep Therapy Device online | RespShop,” Respshop.com, 2023. <a href="https://www.respshop.com/for-reference/cpap-machines/manual-cpap-machines/philips-nightbalance-positional-sleep-therapy-device-p-1478.html?srsltid=AfmBOorQz0KEzmicK-SfHvxwtpIHOpqwR3AWZ1cB5uPyKbY5wJfVMl_c" target="_blank">https://www.respshop.com/for-reference/cpap-machines/manual-cpap-machines/philips-nightbalance-positional-sleep-therapy-device-p-1478.html?srsltid=AfmBOorQz0KEzmicK-SfHvxwtpIHOpqwR3AWZ1cB5uPyKbY5wJfVMl_c</a>
+        </li>
+        <li>
+          M. Mahler, “How to sleep with a pregnancy pillow? 4 best sleeping positions,” Huckleberrycare.com, Nov. 17, 2022. <a href="https://huckleberrycare.com/blog/how-to-sleep-with-a-pregnancy-pillow" target="_blank">https://huckleberrycare.com/blog/how-to-sleep-with-a-pregnancy-pillow</a>
+        </li>
+        <li>
+          Y. Li et al., “Characteristics and Mechanism of Upper Airway Collapse Revealed by Dynamic MRI during Natural Sleep in Patients with Severe Obstructive Sleep Apnea,” Nature and Science of Sleep, vol. Volume 15, pp. 885–902, Nov. 2023, doi: <a href="https://doi.org/10.2147/nss.s423303" target="_blank">https://doi.org/10.2147/nss.s423303</a>
+        </li>
+        <li>
+          “Continuous Positive Airway Pressure,” Singhealth.com.sg, 2019. <a href="https://www.singhealth.com.sg/patient-care/conditions-treatments/Continuous-Positive-Airway-Pressure" target="_blank">https://www.singhealth.com.sg/patient-care/conditions-treatments/Continuous-Positive-Airway-Pressure</a>
+        </li>
+        <li>
+          “MetaMotionRL – MBIENTLAB.” <a href="https://mbientlab.com/metamotionrl/" target="_blank">https://mbientlab.com/metamotionrl/</a>
+        </li>
+        <li>
+          “Night Shift Positional Therapy,” Night Shift Positional Therapy. <a href="https://nightshifttherapy.com/" target="_blank">https://nightshifttherapy.com/</a>
+        </li>
+        <li>
+          “Obstructive Sleep Apnoea (OSA) - Conditions & Treatments,” Singhealth.com.sg, 2019. <a href="https://www.singhealth.com.sg/patient-care/conditions-treatments/obstructive-sleep-apnoea-osa-surgery" target="_blank">https://www.singhealth.com.sg/patient-care/conditions-treatments/obstructive-sleep-apnoea-osa-surgery</a>
+        </li>
+        <li>
+          “Obstructive Sleep Apnoea: All You Need to Know, From Diagnosis to Treatment,” Singhealth.com.sg, Jul. 13, 2023. <a href="https://www.singhealth.com.sg/news/defining-med/all-about-osa" target="_blank">https://www.singhealth.com.sg/news/defining-med/all-about-osa</a>
+        </li>
+        <li>
+          “Sleep Apnea Device | Zzoma - Alternative to CPAP,” ZzomaTM, Nov. 04, 2024. <a href="https://zzomaosa.com/" target="_blank">https://zzomaosa.com/</a>
+        </li>
+        <li>
+          “SomnoDent® Flex – SomnoMed US,” Somnomed.com, 2024. <a href="https://somnomed.com/en/dentists/products/somnodent/somnodent-flex/" target="_blank">https://somnomed.com/en/dentists/products/somnodent/somnodent-flex/</a>
         </li>
       </ul>
     </div>
