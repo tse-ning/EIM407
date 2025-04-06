@@ -117,11 +117,11 @@
           <sl-tree-item> <a href="#section-5-2"> 5.2. Prototyping Approach </a> </sl-tree-item>
         </sl-tree-item>
 
-        <sl-tree-item expanded> <a href="#section-6">6 Detailed Design</a>
-          <sl-tree-item> <a href="#section-6-1">6.1 Simplifying Assumptions & Design Focus</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-6-2">6.2 Inspiration from Existing Solutions</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-6-3">6.3 Accessibility & Affordability</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-6-4">6.4 Design Specifications</a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#section-6"> 6. DETAILED DESIGN </a>
+          <sl-tree-item> <a href="#section-6-1"> 6.1. Design Inspiration </a> </sl-tree-item>
+          <sl-tree-item> <a href="#section-6-2"> 6.2. Component Overview </a> </sl-tree-item>
+          <sl-tree-item> <a href="#section-6-3"> 6.3. Design Specifications </a> </sl-tree-item>
+          <sl-tree-item> <a href="#section-6-4"> 6.4. Cost and Modularity for Testing </a> </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded> <a href="#section-7">7 Prototyping & Testing</a>
@@ -159,6 +159,8 @@
         <sl-tree-item expanded> <a href="#figure10"> Fig. 10: Problem Tree Analysis. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#figure11"> Fig. 11: Target User Persona. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#figure12"> Fig. 12: Value Proposition Canvas. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure13"> Fig. 13: Maternity Pillow Used in SKH Study. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure14"> Fig. 14: Initial Design Configuration. </a> </sl-tree-item>
       </sl-tree>
     </div>
     <br />
@@ -176,7 +178,8 @@
         <sl-tree-item expanded> <a href="#table5"> Table 5: Comparison of Common Treatment Options. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#table6"> Table 6: Key Limitations Across OSA Treatment Options. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#table7"> Table 7: Key Features and Benefits of Our Solution. </a> </sl-tree-item>
-        <sl-tree-item expanded> <a href="#table7"> Table 8: Dimensions of Sleep Comfort. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#table8"> Table 8: Dimensions of Sleep Comfort. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#table9"> Table 9: Design Specifications for Initial Testing. </a> </sl-tree-item>
       </sl-tree>
     </div>
     <br />
@@ -680,70 +683,69 @@
     <br />
     <div>
       <div id="section-6">
-        <h2>6 Detailed Design</h2>
-        <p style="text-indent: 2em;">
-          Taking into consideration all design factors we have to test eventually, we decided to explore each factor systematically by isolating and evaluating them one at a time. This approach will allow us to observe the effect of each variable on both positional and thermal comfort, ensuring we are optimising each aspect individually before moving on to further iterations.
-        </p>
+        <h2 style="font-weight: bold; text-align: center; font-size:20px;"> 6. DETAILED DESIGN </h2>
       </div>
 
       <br />
 
       <div id="section-6-1">
-        <h3>6.1 Simplifying Assumptions & Design Focus</h3>
-        <p style="text-indent: 2em;">
-          Due to the large number of variables involved, we are faced with a wide range of combinations for testing. Using firmness and material as an example, we have to test for 25 different combinations to obtain the optimal positional and thermal comfort for a user (Table 6). Each of these combinations will require extensive data collection over a few days, making the overall process very tedious.
-        </p>
-        <image-component tag="image" source="assets/Table6.png" subtitle="Table 6: Testing Combinations for Two Factors"></image-component>
-        <p style="text-indent: 2em;">
-          To focus our efforts and streamline the development process, we made some simplifying assumption:
-        </p>
-        <ul>
-        <li>
-          Each factor (in Table 5) is solely tied to either positional comfort or thermal comfort, but not both.
-        </li>
-        <li>
-          Different materials at the same firmness level yield similar positional comfort results. This allows us to first standardise the material and focus on exploring various firmness levels. Once the optimal firmness is identified, we can then explore different materials to optimise thermal comfort and refine the overall design.
-        </li>
-        </ul>
-        <p style="text-indent: 2em;">
-          That said, in all our iterations, we will gather findings for both positional and thermal comfort to inform future improvements.
-        </p>
+        <h3 style="font-weight: bold; font-size:18px;"> 6.1. Design Inspiration </h3>
+        <p style="text-indent: 2em; font-size: 16px;"> Our design draws inspiration from the maternity pillow tested in a pilot study conducted by SKH (Fig. 13). This pillow showed potential in encouraging side-sleeping positions, which in turn reduced OSA symptoms for a subset of patients. While the original design was effective, feedback from the study highlighted limitations in thermal comfort and customisability. </p>
+        <image-component
+          tag="image"
+          source="assets/Figure13.png"
+          subtitle=""
+          style="width:200px; height:auto; display: block; margin: 0 auto;"
+          id="figure13">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 13: Maternity Pillow Used in SKH Study. </div>
+        <p style="text-indent: 2em; font-size: 16px;"> To build on its strengths, our design incorporates similar positioning principles but enhances the solution with improved comfort, modularity, and thermal regulation features. </p>
       </div>
 
       <br />
 
       <div id="section-6-2">
-        <h3>6.2 Inspiration from Existing Solutions</h3>
-        <p style="text-indent: 2em;">
-          Our design draws inspiration from the pregnancy pillow previously tested by Sengkang Hospital (Figure 11). Since this pillow has shown to be effective in encouraging side-sleeping, it served as a model for our solution. We incorporated similar principles but enhanced the design to improve comfort, adjustability, and thermal regulation.
-        </p>
-        <image-component tag="image" source="assets/Figure11.jpg" subtitle="Figure 11: Pregnancy Pillow" style="width:200px; height:auto; display: block; margin: 0 auto;"></image-component>
-        <p style="text-indent: 2em;">
-          Our solution includes a fixed shape and material for pillow components, with a standard pillow for head support, paired with front and back bolsters to provide additional support (Figure 12). This configuration makes use of familiar elements, which is likely to improve comfort and ease of use for patients.
-        </p>
-        <image-component tag="image" source="assets/Figure12.png" subtitle="Figure 12: Testing Setup" style="width:250px; height:auto; display: block; margin: 0 auto;"></image-component>
+        <h3 style="font-weight: bold; font-size:18px;"> 6.2. Component Overview </h3>
+        <p style="text-indent: 2em; font-size: 16px;"> Our proposed setup includes a fixed configuration using a standard head pillow (the user’s own), paired with front and back bolsters to support side-sleeping (Fig. 14). This arrangement leverages familiar elements to increase user comfort and acceptance, while the back bolster is the only variable component for testing purposes. </p>
+        <image-component
+          tag="image"
+          source="assets/Figure14.png"
+          subtitle=""
+          style="width:250px; height:auto; display: block; margin: 0 auto;"
+          id="figure14">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 14: Initial Design Configuration. </div>
       </div>
 
       <br />
 
       <div id="section-6-3">
-        <h3>6.3 Accessibility & Affordability</h3>
-        <p style="text-indent: 2em;">
-          Our design is cost-effective, ensuring the solution is affordable and accessible to a wide range of patients. Users will only need to purchase the bolsters if they do not already have them, which reduces the overall financial burden. By keeping costs low, we aim to increase patient compliance (for our research) and ensure that a broader range of patients can benefit from this solution.
-        </p>
+        <h3 style="font-weight: bold; font-size:18px;"> 6.3. Design Specifications </h3>
+        <p style="text-indent: 2em; font-size: 16px;"> To guide development and evaluation, we established the following design specifications (Table 9): </p>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Table 9: Design Specifications for Initial Testing. </div>
+        <div style="margin-top: 4px;"> </div>
+        <image-component
+          tag="image"
+          source="assets/Table9.png"
+          subtitle=""
+          style="width:700px; height:auto; display: block; margin: 0 auto;"
+          id="table9">
+        </image-component>
+        <p style="text-indent: 2em; font-size: 16px;"> For the initial phase, our focus is on isolating firmness as the variable of interest. Once its effectiveness in promoting side-sleeping is confirmed, other design factors (e.g. inner materials, shape) will be explored and iterated upon. </p>
       </div>
 
       <br />
 
       <div id="section-6-4">
-        <h3>6.4 Design Specifications</h3>
-        <image-component tag="image" source="assets/DesignSpecs.png" subtitle=" " style="display: block; margin: 0 auto;"></image-component>
+        <h3 style="font-weight: bold; font-size:18px;"> 6.4. Cost and Modularity for Testing </h3>
+        <p style="text-indent: 2em; font-size: 16px;"> For cost-effectiveness and accessibility during testing, only the back bolster needs to be “purchased”. By allowing users to retain their existing pillows and bolsters, the financial burden is kept low, helping increase compliance during the study phase. This modular approach also provides flexibility or future iterations where different components may be adjusted or replaced. </p>
       </div>
     </div>
+    <br />
+    
+    <hr />
 
     <br />
-    <sl-divider></sl-divider>
-
     <div>
       <div id="section-7">
         <h2>7 Prototyping & Testing</h2>
