@@ -124,14 +124,13 @@
           <sl-tree-item> <a href="#section-6-4"> 6.4. Cost and Modularity for Testing </a> </sl-tree-item>
         </sl-tree-item>
 
-        <sl-tree-item expanded> <a href="#section-7">7 Prototyping & Testing</a>
-          <sl-tree-item> <a href="#section-7-1">7.1 Initial Prototyping & Firmness Testing</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-7-2">7.2 Securing the Bolsters for Positional Stability</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-7-3">7.3 Data Collection: Sensor-Based Monitoring</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-7-4">7.4 User Feedback: Qualitative Comfort Assessment</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-7-5">7.5 Data Collected: Positional Comfort Evaluation</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-7-6">7.6 Data Collected: User Feedback Evaluation</a> </sl-tree-item>
-          <sl-tree-item> <a href="#section-7-7">7.7 Insights & Expected Results</a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#section-7"> 7. TESTING METHODOLOGY </a>
+          <sl-tree-item> <a href="#section-7-1"> 7.1. Testing Pillow Firmness </a> </sl-tree-item>
+          <sl-tree-item> <a href="#section-7-2"> 7.2. Assessing Effectiveness of Bolster and Side-Sleeping Comfort </a>
+            <sl-tree-item> <a href="#section-7-2-1"> 7.2.1. Quantitative Data: Sensor-Based Monitoring </a> </sl-tree-item>
+            <sl-tree-item> <a href="#section-7-2-2"> 7.2.2. Qualitative Data: User Feedback on Comfort </a> </sl-tree-item>
+            <sl-tree-item> <a href="#section-7-2-3"> 7.2.3. Positional Comfort Data Analysis </a> </sl-tree-item>
+          </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded> <a href="#section-8">8 Limitations & Future Plans</a> </sl-tree-item>
@@ -161,6 +160,12 @@
         <sl-tree-item expanded> <a href="#figure12"> Fig. 12: Value Proposition Canvas. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#figure13"> Fig. 13: Maternity Pillow Used in SKH Study. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#figure14"> Fig. 14: Initial Design Configuration. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure15"> Fig. 15: Firmness Testing Procedure. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure16"> Fig. 16: Graph of Compressed Height (cm) against Mass of Bolster (g). </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure17"> Fig. 17: Exploded View of MetaMotionRL Sensor. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure18"> Fig. 18: Sensor Worn on Test Subject. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure19"> Fig. 19: Data Recorded by MetaMotionRL Sensor. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure20"> Fig. 20: Data Plots Generated. </a> </sl-tree-item>
       </sl-tree>
     </div>
     <br />
@@ -748,101 +753,108 @@
     <br />
     <div>
       <div id="section-7">
-        <h2>7 Prototyping & Testing</h2>
+        <h2 style="font-weight: bold; text-align: center; font-size:20px;"> 7. TESTING METHODOLOGY </h2>
       </div>
 
       <div id="section-7-1">
-        <h3>7.1 Initial Prototyping & Firmness Testing</h3>
-        <p style="text-indent: 2em;">
-          To begin our initial prototyping and testing, we needed a basic bolster to serve as our starting point. Once the bolsters arrived, we conducted a firmness test on each one (Figure 13). Our goal was to create a quantifiable scale across five distinct firmness levels, which we would then use to evaluate user comfort and the effectiveness of positional support.
-        </p>
-        <image-component tag="image" source="assets/Figure13.png" subtitle="Figure 13: Firmness Test Procedure" style="width:300px; height:auto; display: block; margin: 0 auto;"></image-component>
-        <p style="text-indent: 2em;">
-          Currently, we are in the process of testing these firmness levels across three different test subjects, with the aim of understanding how firmness alone affects both effectiveness and comfort.
-        </p>
+        <h3 style="font-weight: bold; font-size:18px;"> 7.1. Testing Pillow Firmness </h3>
+        <p style="text-indent: 2em; font-size: 16px;"> To systematically evaluate how firmness affects the effectiveness of our bolster, we first needed a way to quantify firmness using measurable parameters. Since firmness is typically difficult to standardise for cylindrical bolsters, we designed a simplified experimental method to assess the relationship between bolster filling mass and compressive response (Fig. 15). </p>
+        <image-component
+          tag="image"
+          source="assets/Figure15.png"
+          subtitle=""
+          style="width:250px; height:auto; display: block; margin: 0 auto;"
+          id="figure15">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 15: Firmness Testing Procedure. </div>
+        
+        <br/>
+        
+        <p style="text-indent: 2em; font-size: 16px;"> During testing, we encountered a few limitations. It was challenging to evenly distribute the bolster filling, which introduced some inconsistencies in compression behavior. Additionally, the bolster’s non-uniform shape made it difficult to obtain precise and consistent weight measurements on the scale. Despite challenges introducing a degree of variability, preliminary observations from three bolsters tested revealed a roughly linear relationship between bolster mass and compressed height (Fig. 16). </p>
+        <image-component
+          tag="image"
+          source="assets/Figure16.png"
+          subtitle=""
+          style="width:500px; height:auto; display: block; margin: 0 auto;"
+          id="figure16">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 16: Graph of Compressed Height (cm) against Mass of Bolster (g). </div>
+        <p style="text-indent: 2em; font-size: 16px;"> This test allows us to establish a quantifiable relationship between bolster mass and its compressed height, which serves as a proxy for firmness. By standardising the compression setup and isolating bolster mass as the variable, we can generate five distinct firmness levels for testing. This forms the basis for our initial prototype evaluation, enabling us to systematically explore how different firmness levels influence the effectiveness of side-sleeping support and user comfort. The insights from this test will inform the selection of an optimal firmness level for subsequent design iterations. </p>
       </div>
 
       <br />
 
       <div id="section-7-2">
-        <h3>7.2 Securing the Bolsters for Positional Stability</h3>
-        <p style="text-indent: 2em;">
-          Ensuring consistent positional support was critical as the bolsters needed to stay in place during sleep without rolling away. Hence, we designed a system to secure the front and back bolsters together. Our solution used a velcro and cloth loop mechanism (Figure 14), allowing the bolsters to ‘hug’ the body comfortably and prevent unwanted movement during sleep, keeping the user in a side-sleeping position.
-        </p>
-        <image-component tag="image" source="assets/Figure14.png" subtitle="Figure 14: Bolster Setup" style="width:700px; height:auto; display: block; margin: 0 auto;"></image-component>
-        <p style="text-indent: 2em;">
-          This approach was inspired by the design of pregnancy pillows which features a connecting structure that stabilises support points and was chosen for its simplicity and user-friendliness. The loops for each bolster are connected by a strip of cloth, keeping them securely in place while being easy to attach and remove as needed.
-        </p>
+        <h3 style="font-weight: bold; font-size:18px;"> 7.2. Assessing Effectiveness of Bolster and Side-Sleeping Comfort </h3>
+        <p style="text-indent: 2em; font-size: 16px;"> To evaluate the effectiveness of our bolster design in encouraging side-sleeping, we adopted a mixed-methods approach, incorporating both quantitative sensor-based data and qualitative user feedback. This dual approach allowed us to capture not only objective indicators of body position but also the subjective comfort experienced by users, two critical factors for the long-term success of positional sleep therapy. </p>
       </div>
 
       <br />
 
-      <div id="section-7-3">
-        <h3>7.3 Data Collection: Sensor-Based Monitoring</h3>
-        <p style="text-indent: 2em;">
-          To accurately monitor and record the sleep posture of our test subjects, we used the MetaMotionRL (Figure 15), a wearable device that offers real-time, continuous monitoring of motion data. This device captures the frequency and range of motion, allowing us to determine if our design effectively encourages side-sleeping.
-        </p>
-        <image-component tag="image" source="assets/Figure15.png" subtitle="Figure 15: MetaMotionRL Sensor" style="width:200px; height:auto; display: block; margin: 0 auto;"></image-component>
-        <p style="text-indent: 2em;">
-          The sensor was worn on the subject’s chest area (and taped down using any tape) to provide a stable reference point for detecting body position shifts (Figure 16). For optimal alignment, the charging port faced downward, ensuring consistent orientation and accurate data collection.
-        </p>
-        <image-component tag="image" source="assets/Figure16.png" subtitle="Figure 16: Sensor worn on Test Subject" style="width:250px; height:auto; display: block; margin: 0 auto;"></image-component>
+      <div id="section-7-2-1">
+        <h4 style="font-weight: bold; font-size:18px;"> 7.2.1. Quantitative Data: Sensor-Based Monitoring </h4>
+        <p style="text-indent: 2em; font-size: 16px;"> To objectively track users’ sleep posture throughout the night, we used the MetaMotionRL sensor (Fig. 17), a wearable device capable of continuous, real-time motion tracking. By recording orientation and movement data, the sensor enabled us to determine whether the user remained on their side or shifted positions during sleep. </p>
+        <image-component
+          tag="image"
+          source="assets/Figure17.png"
+          subtitle=""
+          style="width:200px; height:auto; display: block; margin: 0 auto;"
+          id="figure17">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig.17: Exploded View of MetaMotionRL Sensor. </div>
+
+        <br />
+        
+        <p style="text-indent: 2em; font-size: 16px;"> The sensor was secured on the user’s chest area using regular tape, with the charging port facing downward for consistent alignment (Fig. 18). This positioning ensured stable reference points for detecting changes in pitch angle, which is the primary metric used to assess side-sleeping. </p>
+        <image-component
+          tag="image"
+          source="assets/Figure18.png"
+          subtitle=""
+          style="width:250px; height:auto; display: block; margin: 0 auto;"
+          id="figure18">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 18: Sensor Worn on Test Subject. </div>
       </div>
 
       <br />
 
-      <div id="section-7-4">
-        <h3>7.4 User Feedback: Qualitative Comfort Assessment</h3>
-        <p style="text-indent: 2em;">
-          In addition to quantitative data from the sensor, we recognised the importance of capturing subjective experience of comfort, as it can vary from user to user. We thus created a survey to gather user feedback on their comfort levels after each sleep session with the bolsters. Participants rated their positional comfort and thermal comfort on a scale from 1 to 5, where 1 represented the least comfort and 5 represented the most comfort. This allowed us to capture how users perceived their experience with different firmness levels and how perceived temperature affected their comfort.
-        </p>
+      <div id="section-7-2-2">
+        <h4 style="font-weight: bold; font-size:18px;"> 7.2.2. Qualitative Data: User Feedback on Comfort </h4>
+        <p style="text-indent: 2em; font-size: 16px;"> Recognising that comfort is a subjective and critical factor for long-term adherence, we also gathered qualitative feedback through a post-sleep survey. After each night of testing, participants were asked to rate their positional comfort and thermal comfort on a 5-point Likert scale (1 = least comfort, 5 = most comfort). This allowed us to correlate perceived comfort – both positional and thermal – with bolster firmness levels and identify areas for design improvement. </p>
       </div>
 
       <br />
 
-      <div id="section-7-5">
-        <h3>7.5 Data Collected: Positional Comfort</h3>
-        <p style="text-indent: 2em;">
-          Several data were captured by the MetaMotionRL sensor (Figure 17), but the primary metric for assessing positional comfort was pitch angle, which measures the side-to-side tilt of the body. By focusing on this metric, we tracked whether users remained on their sides or shifted to their backs while sleeping. This was critical in determining the effectiveness of the bolster in maintaining the desired side-sleeping position.
-        </p>
-        <image-component tag="image" source="assets/Figure17.png" subtitle="Figure 17: Data captured by MetaMotionRL Sensor" style="width:600px; height:auto; display: block; margin: 0 auto;"></image-component>
-        <p style="text-indent: 2em;">
-          Data collected by the sensor was analysed using the following plots:
-        </p>
-        <image-component tag="image" source="assets/Plots.png" subtitle=" " style="display: block; margin: 0 auto;"></image-component>
-        <p style="text-indent: 2em;">
-          Data collected so far has been summarised in Figure 18, which shows percentage side lying across the baseline (no back bolster) and each of the five firmness levels (Firmness 1 to Firmness 5) tested. This plot provides an overview of how the bolsters are performing in terms of encouraging side-sleeping.
-        </p>
-        <image-component tag="image" source="assets/Figure18.png" subtitle="Figure 18: Percentage Side Lying Across Various Conditions" style="width:600px; height:auto; display: block; margin: 0 auto;"></image-component>
-      </div>
+      <div id="section-7-2-3">
+        <h4 style="font-weight: bold; font-size:18px;"> 7.2.3. Positional Comfort Data Analysis </h4>
+        <p style="text-indent: 2em; font-size: 16px;"> Among the various metrics recorded by the MetaMotionRL sensor (Fig. 19), pitch angle was the most relevant for our analysis. It reflects the lateral tilt of the body and helps us determine whether users were lying on their left side, right side, or back. </p>
+        <image-component
+          tag="image"
+          source="assets/Figure19.png"
+          subtitle=""
+          style="width:550px; height:auto; display: block; margin: 0 auto;"
+          id="figure19">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 19: Data Recorded by MetaMotionRL Sensor. </div>
 
-      <br />
+        <br />
 
-      <div id="section-7-6">
-        <h3>7.6 Data Collected: User Feedback</h3>
-        <p style="text-indent: 2em;">
-          Qualitative data from the surveys were consolidated into a frequency table (Table 7) to identify trends across different firmness levels.
-        </p>
-        <image-component tag="image" source="assets/Table7.png" subtitle="Figure 7: Survey Frequency Table" style="display: block; margin: 0 auto;"></image-component>
-      </div>
-
-      <br />
-      
-      <div id="section-7-7">
-        <h3>7.7 Insights & Expected Results</h3>
-        <p style="text-indent: 2em;">
-          Currently, we are in the process of testing the five firmness levels across three test subjects, with data collection ongoing. In the final box plot, we expect that baseline (without any back bolster) will form the control group, showing natural side-sleeping support. The most firm back support (Firmness 1) is expected to have the highest percentage side lying (close to 100 percent), indicating effective side-sleeping support. As firmness decreases from Firmness 1 to 5 (where there is minimal support), we expect percentage side lying to decrease, eventually returning to baseline levels (Figure 19).
-        </p>
-        <image-component tag="image" source="assets/Figure19.png" subtitle="Figure 19: Expected Trend" style="width:600px; height:auto; display: block; margin: 0 auto;"></image-component>
-        <p style="text-indent: 2em;">
-          These insights will guide our next steps in optimising bolster firmness and materials, allowing us to refine the design for improved comfort and support.
-        </p>
+        <p style="text-indent: 2em; font-size: 16px;"> To analyse positional comfort, we generated several visual plots (Fig. 20): </p>
+        <image-component
+          tag="image"
+          source="assets/Figure20.png"
+          subtitle=""
+          style="width:600px; height:auto; display: block; margin: 0 auto;"
+          id="figure20">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 20: Data Plots Generated. </div>
       </div>
     </div>
+    <br />
+
+    <hr />
 
     <br />
-    <sl-divider></sl-divider>
-
     <div>
       <div id="section-8">
         <h2>8 Limitations & Future Plans</h2>
