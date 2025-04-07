@@ -69,7 +69,7 @@
     <div id="acknowledgements">
       <h2 style="font-weight: bold; text-align: center; font-size:20px;"> ACKNOWLEDGEMENTS </h2>
       <p style="text-indent: 2em; font-size:16px;"> I would like to express my gratitude to my project supervisors and teaching assistants, <b>Dr. Yen Shih-Cheng</b>, Associate Professor <b>Mr. Patrick Chia</b>, <b>Ms. Ng Xin Le</b>, and <b>Mr. Zhu Hongjiao</b>, for their invaluable guidance and support throughout this capstone project. Their dedication and mentorship were instrumental in shaping the project’s development, providing me with the clarity and direction needed to refine my work. </p>
-      <p style="text-indent: 2em; font-size:16px;"> I would also like to extend my appreciation to <b>Dr. Phua Chu Qin and her team at Sengkang General Hospital</b> for their collaboration and willingness to share their expertise, resources, and research insights, which guided key aspects of the project. </p>
+      <p style="text-indent: 2em; font-size:16px;"> I would also like to extend my appreciation to <b>Dr. Phua Chu Qin</b> and her team at Sengkang General Hospital for their collaboration and willingness to share their expertise, resources, and research insights, which guided key aspects of the project. </p>
       <p style="text-indent: 2em; font-size:16px;"> Additionally, I am grateful to <b>Ms. Roopashini Sivananthan</b> and <b>Ms. Tanya Rai</b>, who worked on this project under the Undergraduate Research Opportunities Programme (UROP), for their camaraderie and contributions during the initial phase of the project. </p>
       <p style="text-indent: 2em; font-size:16px;"> Finally, I would like to thank my examiner, <b>Dr. Tang Kok Zuea</b>, for his insightful feedback and encouragement, which helped refine and strengthen my work. </p>
       <p style="text-indent: 2em; font-size:16px;"> This project would not have been possible without the generous guidance, collaboration, and support of these individuals, and I deeply appreciate their contributions. </p>
@@ -215,7 +215,8 @@
         <sl-tree-item style="font-size: 14px;" expanded> <a href="#figure31"> Fig. 31: Nested Structure of Cylindrical Bolster. </a> </sl-tree-item>
         <sl-tree-item style="font-size: 14px;" expanded> <a href="#figure32"> Fig. 32: Inner Foam Core Structure. </a> </sl-tree-item>
         <sl-tree-item style="font-size: 14px;" expanded> <a href="#figure33"> Fig. 33: Example of Trapezoidal Bolsters. </a> </sl-tree-item>
-        <sl-tree-item style="font-size: 14px;" expanded> <a href="#figure34"> Fig. 34: Temperature Testing Setup. </a> </sl-tree-item>
+        <sl-tree-item style="font-size: 14px;" expanded> <a href="#figure34"> Fig. 34: Box Plot – Sensor Data for Subject 1. </a> </sl-tree-item>
+        <sl-tree-item style="font-size: 14px;" expanded> <a href="#figure35"> Fig. 35: Temperature Testing Setup. </a> </sl-tree-item>
       </sl-tree>
     </div>
     <br />
@@ -1063,7 +1064,7 @@
       <div id="section-8-3">
         <h3 style="font-weight: bold; font-size:18px;"> 8.3. Shape and Size Iterations </h3>
         <p style="text-indent: 2em; font-size: 16px;"> The design process for the bolster began with a standard cylindrical shape, which could only accommodate one type of filling – during initial firmness testing, polyester was used. As the project progressed, we considered experimenting with different types of fillings to test their performance. However, we encountered concerns regarding the ability of alternative materials to match the firmness levels achieved by polyester. </p>
-        <p style="text-indent: 2em; font-size: 16px;"> To overcome this challenge, we designed a nested structure (Fig. 31). The cylindrical bolster design featured an inner core made of polyurethane (PU) foam. This structure provided the necessary support from the foam core while still allowing for temperature regulation through the outer filling material, which was later tested for thermal comfort. The foam core was composed of small 3-cm cubes instead of a large slab (Fig. 32), allowing users to adjust the firmness to their preference. </p>
+        <p style="text-indent: 2em; font-size: 16px;"> This led to the development of a nested cylindrical bolster, where a polyurethane (PU) foam core was surrounded by an outer layer containing the desired filling (Fig. 31). This modularity ensured consistent back support from the core, while allowing the outer layer to contribute to thermal comfort and breathability based on the material used. The core was constructed using small 3-cm foam cubes (Fig. 32), allowing users to adjust the firmness to their preference. </p>
         <image-component
           tag="image"
           source="assets/Figure31.jpg"
@@ -1082,7 +1083,7 @@
         </image-component>
         <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 32: Inner Foam Core Structure. </div>
         <br />
-        <p style="text-indent: 2em; font-size: 16px;"> Additionally, we explored moving away from the cylindrical design in favor of a possibly more ergonomic trapezoidal shape that might provide better support against the user’s back. We tested three different angles for the trapezoidal bolster – 45°, 60°, and 90° – and conducted initial testing with five participants (Fig. 33). </p>
+        <p style="text-indent: 2em; font-size: 16px;"> In addition to cylindrical forms, flat-back or trapezoidal bolster geometries were also explored to assess their potential in improving back support. Rapid prototype testing was conducted using angle variations of 45°, 60°, 70-75°, 80°, and 90° (Fig. 33). </p>
         <image-component
           tag="image"
           source="assets/Figure33.png"
@@ -1092,7 +1093,7 @@
         </image-component>
         <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 33: Example of Trapezoidal Bolsters. </div>
         <br />
-        <p style="text-indent: 2em; font-size: 16px;"> The feedback showed varying comfort levels across the different angles, summarised in Table 11. </p>
+        <p style="text-indent: 2em; font-size: 16px;"> Informal feedback from five participants indicated that the 70-75° angle provided the best combination of comfort and support (Table 11). Participants consistently reported that extreme angles (e.g., 45° and 90°) were either too flat or too steep, and thus a trapezoidal bolster with a 75° angle was selected for further testing. </p>
         <div style="text-align: center; font-style: italic; font-size: 15px;"> Table 11: Feedback from User Testing with Trapezoidal Bolsters. </div>
         <div style="margin-top: 4px;"> </div>
         <image-component
@@ -1102,14 +1103,28 @@
           style="width:600px; height:auto; display: block; margin: 0 auto;"
           id="table11">
         </image-component>
+        <p style="text-indent: 2em; font-size: 16px;"> Subject 1 from the initial firmness tests continued with follow-up trials to evaluate the effect of bolster shape on sleeping posture. Using the same motion sensor setup, two additional trials were conducted (Fig. 34): </p>
+        <image-component
+          tag="image"
+          source="assets/Figure34.png"
+          subtitle=""
+          style="width:700px; height:auto; display: block; margin: 0 auto;"
+          id="figure34">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 34: Box Plot – Sensor Data for Subject 1. </div>
+        <ul>
+          <li style="font-size:16px;"> With the <b>cylindrical bolster</b> (nested structure) using Eden Cool filling, the percentage of time spent in a side-lying position increased to a median of approximately <b>88%</b> </li>
+          <li style="font-size:16px;"> With the <b>trapezoidal bolster</b> (75° angle), the percentage of time spent in a side-lying position increased further to a median of approximately <b>95%</b> </li>
+        </ul>
+        <p style="text-indent: 2em; font-size: 16px;"> These preliminary results suggest that both the bolster’s shape and internal structure play significant roles in supporting positional sleep therapy. </p>
       </div>
 
       <br />
 
       <div id="section-8-4">
         <h3 style="font-weight: bold; font-size:18px;"> 8.4. Inner Material & Temperature Testing </h3>
-        <p style="text-indent: 2em; font-size: 16px;"> In parallel with testing the shape and size of the bolster, we also focused on the selection of materials for the outer filling (surrounding the inner core) to optimize both comfort and thermal regulation by swapping out the initial polyester filling with various materials (Table 12). The goal was to identify the best filling for regulating temperature, maintaining comfort and preventing heat buildup during side-sleeping. </p>
-        <div style="text-align: center; font-style: italic; font-size: 15px;"> Table 12: Outer Filling Materials Tested. </div>
+        <p style="text-indent: 2em; font-size: 16px;"> In parallel with testing the shape and size of the bolster, we also focused on the selection of materials for the outer filling (surrounding the inner core) to optimise both comfort and thermal regulation by swapping out the initial polyester filling with various materials (Table 12) [25, 26, 27, 28]. The goal was to identify the best filling for regulating temperature, maintaining comfort and preventing heat buildup during side-sleeping. </p>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Table 12: Outer Filling Materials Tested. Obtained from  [25, 26, 27, 28]. </div>
         <div style="margin-top: 4px;"> </div>
         <image-component
           tag="image"
@@ -1127,12 +1142,12 @@
         <p style="text-indent: 2em; font-size: 16px;"> To evaluate the thermal performance of different fillings, a thermal testing setup was developed to simulate a human lying on the bolster (Fig. 34). This allowed us to assess how well each material dissipated heat and maintained a comfortable temperature during side-sleeping. </p>
         <image-component
           tag="image"
-          source="assets/Figure34.png"
+          source="assets/Figure35.png"
           subtitle=""
           style="width:500px; height:auto; display: block; margin: 0 auto;"
-          id="figure34">
+          id="figure35">
         </image-component>
-        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 34: Temperature Testing Setup. </div>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 35: Temperature Testing Setup. </div>
         <br />
         <p style="text-indent: 2em; font-size: 16px;"> The bolster was placed on a flat surface (table) in an air-conditioned room. A heat pad was placed on one side of the bolster, with a temperature probe positioned on top of the heat pad. To minimise heat loss from the top of the setup, the probe and heat pad were covered with a layer of black foam and aluminum foil for insulation. This setup mimicked the scenario where the bolster would be exposed to heat from the human body. </p>
         <p style="text-indent: 2em; font-size: 16px;"> The temperature of the heat pad was kept constant at 37°C, which approximates human body temperature. This ensured that the system was operating under realistic conditions, simulating the heat transfer from the human body to the bolster. The goal was to measure how well the bolster material dissipated heat, with the hypothesis that better heat dissipation would result in lower energy consumption. </p>
