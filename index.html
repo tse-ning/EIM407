@@ -133,9 +133,13 @@
           </sl-tree-item>
         </sl-tree-item>
 
-        <sl-tree-item expanded> <a href="#section-8">8 Limitations & Future Plans</a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#section-8"> 8. PROTOTYPING & TESTING </a>
+          <sl-tree-item> <a href="#section-8-1"> 8.1. Firmness Prototyping & Testing </a> </sl-tree-item>
+            <sl-tree-item> <a href="#section-8-1-1"> 8.1.1. Sensor Data Analysis: Percentage Side-Lying </a> </sl-tree-item>
+            <sl-tree-item> <a href="#section-8-1-2"> 8.1.2. User Feedback: Comfort Assessment </a> </sl-tree-item>
+        </sl-tree-item>
 
-        <sl-tree-item expanded> <a href="#references">References</a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#references"> REFERENCES </a> </sl-tree-item>
       </sl-tree>
     </div>
     <br />
@@ -166,6 +170,10 @@
         <sl-tree-item expanded> <a href="#figure18"> Fig. 18: Sensor Worn on Test Subject. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#figure19"> Fig. 19: Data Recorded by MetaMotionRL Sensor. </a> </sl-tree-item>
         <sl-tree-item expanded> <a href="#figure20"> Fig. 20: Data Plots Generated. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure21"> Fig. 21: Bolster Setup. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure22"> Fig. 22: Grouped Box Plot – Sensor Data. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure23"> Fig. 23: User Feedback on Positional Comfort. </a> </sl-tree-item>
+        <sl-tree-item expanded> <a href="#figure24"> Fig. 24: User Feedback on Thermal Comfort. </a> </sl-tree-item>
       </sl-tree>
     </div>
     <br />
@@ -854,6 +862,67 @@
 
     <hr />
 
+    <br />
+    <div>
+      <div id="section-8">
+        <h2 style="font-weight: bold; text-align: center; font-size:20px;"> 8. PROTOTYPING & TESTING </h2>
+      </div>
+
+      <div id="section-7-1">
+        <h3 style="font-weight: bold; font-size:18px;"> 8.1. Firmness Prototyping & Testing </h3>
+        <p style="text-indent: 2em; font-size: 16px;"> To explore the impact of bolster firmness on side-sleeping duration, we conducted initial tests with three different subjects. The goal was to determine whether varying levels of firmness would influence the ability of users to maintain a side-sleeping position. Given the exploratory nature of this test, we kept the setup simple and consistent across all trials: each participant used their own pillow, paired with standardised polyester front and back bolsters (Fig. 21). </p>
+        <image-component
+          tag="image"
+          source="assets/Figure21.png"
+          subtitle=""
+          style="width:700px; height:auto; display: block; margin: 0 auto;"
+          id="figure21">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 21: Bolster Setup. </div>
+        <p style="text-indent: 2em; font-size: 16px;"> A key design consideration was ensuring consistent positional support throughout the night. To prevent the bolsters from shifting or rolling away during sleep, we developed a mechanism to secure the front and back bolsters together. Drawing inspiration from the structure of pregnancy pillows, our solution featured a Velcro and cloth loop system (Fig. 21). This mechanism allowed the bolsters to ‘hug’ the user’s body, comfortably maintaining alignment and preventing unwanted movement. The loops for each bolster were connected by a cloth strip, offering both stability and ease of use. </p>
+      </div>
+
+      <br />
+
+      <div id="section-8-1-1">
+        <h4 style="font-weight: bold; font-size:18px;"> 8.1.1. Sensor Data Analysis: Percentage Side-Lying </h4>
+        <p style="text-indent: 2em; font-size: 16px;"> We analysed the sensor-collected data using a grouped boxplot, which visualised the percentage of time each subject spent side-lying across different conditions (Fig. 22) – starting with a baseline (no back bolster), followed by trials with five bolster firmness levels (Firmness 1 = least firm, Firmness 5 = most firm). </p>
+        <image-component
+          tag="image"
+          source="assets/Figure22.png"
+          subtitle=""
+          style="width:700px; height:auto; display: block; margin: 0 auto;"
+          id="figure22">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 22: Grouped Box Plot – Sensor Data. </div>
+        <p style="text-indent: 2em; font-size: 16px;"> The results revealed a general positive trend: <b>as the firmness of the back bolster increased, the percentage of side-sleeping tended to rise</b>. However, there was notable individual variability, with some subjects responding more favourably to certain firmness levels than others. This highlights the importance of customisation in positional sleep therapy and suggests that optimal firmness may vary across users based on personal preferences and physical factors. </p>
+      </div>
+
+      <br />
+
+      <div id="section-8-1-2">
+        <h4 style="font-weight: bold; font-size:18px;"> 8.1.2. User Feedback: Comfort Assessment </h4>
+        <p style="text-indent: 2em; font-size: 16px;"> In addition to sensor data, we gathered user feedback on positional (Fig. 23) and thermal comfort (Fig. 24) through post-sleep surveys. Responses were visualised using heat maps, with ratings on a scale of 1 (least comfortable) to 5 (most comfortable). Unlike the side-lying data, no strong trends emerged across the different firmness levels, indicating that comfort perception is highly subjective and did not show a consistent correlation with firmness in our small sample. </p>
+        <image-component
+          tag="image"
+          source="assets/Figure23.png"
+          subtitle=""
+          style="width:500px; height:auto; display: block; margin: 0 auto;"
+          id="figure23">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 23: User Feedback on Positional Comfort. </div>
+        <br />
+        <image-component
+          tag="image"
+          source="assets/Figure24.png"
+          subtitle=""
+          style="width:500px; height:auto; display: block; margin: 0 auto;"
+          id="figure24">
+        </image-component>
+        <div style="text-align: center; font-style: italic; font-size: 15px;"> Fig. 24: User Feedback on Thermal Comfort. </div>
+      </div>
+        
+    
     <br />
     <div id="references" class="references">
       <h2 style="font-weight: bold; text-align: center; font-size:20px;"> REFERENCES </h2>
